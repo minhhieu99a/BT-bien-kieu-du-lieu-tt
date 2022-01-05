@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+Độ dài bán kính <input type="number"id="bankinhR">
+<button id="DT" onclick="tinhSHT()">Tính diện tích HT</button>
+<script>
+    function tinhSHT() {
+        let banKinh = document.getElementById("bankinhR").value;
+        let R =parseInt(banKinh);
+        let SHT = R*R*3.14
+        alert(SHT);
+    }
+</script>
+<!--<script>-->
+<!--    let dodaibankinh ;-->
+<!--    dodaibankinh = prompt('Nhập độ dài bán kính');-->
+<!--    let R = parseInt(dodaibankinh);-->
+<!--    let SHT = R*R*3.14-->
+<!--    alert(SHT);-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let bankinhR ;-->
+<!--    bankinhR = prompt('Nhập bán kính vào đây : ');-->
+<!--    let R = parseInt(bankinhR);-->
+<!--    let C = 2*R*3.14;-->
+<!--    alert(C)-->
+<!--</script>-->
+Bán kính <input type="text"id="bankinhR">
+<button onclick="tinhchuvi()">Tính chu vi</button>
+<p id="chuvi">chu vi hình tròn</p>
+<script>
+    function tinhchuvi() {
+        let R = Number(document.getElementById("bankinhR").value);
+        let C = 2 * R * 3.14;
+        document.getElementById("chuvi").innerText = C;
+    }
+</script>
+</body>
+</html>
